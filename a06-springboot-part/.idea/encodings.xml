@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/springboot-base-03-springmvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-base-04-druid/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-base-04-druid/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-base-05-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-base-05-mybatis/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

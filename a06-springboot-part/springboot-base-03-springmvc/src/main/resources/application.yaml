@@ -1,0 +1,26 @@
+
+# web?????
+# https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties.server
+
+server:
+  # ?????
+  port: 8080
+  # ?????
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.123.122/studb
+    username: root
+    password: abc123
+
+  devtools:
+    restart:
+      poll-interval: 1s
+      enabled: true
+      additional-paths: com/wggglggg/springbootbase03springmvc
+  thymeleaf:
+    cache: false

@@ -1,0 +1,36 @@
+# server服务
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+# mybatis-plus配置
+mybatis-plus:
+  type-aliases-package: com.wggglggg.a08springbootheadlinepart.model.po
+  global-config:
+    db-config:
+      logic-delete-field: isDeleted   #伪删除属性
+      id-type: auto                   #id自动增长，与数据库想响应。
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      table-prefix: news_             #po类名与表名匹配规则 ，忽略数据库表名前缀
+# druid
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://192.168.123.122:3306/sm_db
+      username: root
+      password: abc123
+  # 热启动
+#  devtools:
+#    restart:
+#      enabled: true
+#      poll-interval: 1s
+#      additional-paths: com.wggglggg.a08springbootheadlinepart
+#Token
+jwt:
+  token:
+    tokenExpiration: 120               #有效时间,单位分钟
+    tokenSignKey: wggglggg@hotmail.com #当前程序签名秘钥 自定义

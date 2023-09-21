@@ -1,0 +1,28 @@
+spring:
+  devtools:
+    restart:
+      additional-paths: com.wggglggg.mybatisplus04wapper
+      enabled: true
+      poll-interval: 1s
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://192.168.123.122:3306/day01
+      username: root
+      password: abc123
+
+mybatis-plus:
+  # \u9ED8\u8BA4mapper.xml\u6587\u4EF6 \u6307\u5B9A\u7684\u4F4D\u7F6E mapper\u6587\u4EF6\u5939
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl   # \u63A7\u5236\u53F0\u8F93\u51FAsql\u8BED\u53E5
+  global-config:
+    db-config:
+      id-type: auto   #\u5168\u5C40\u5C06\u4E3B\u952E\u8BBE\u7F6E\u4E3A\u81EA\u589E\u957F\u7B56\u7565
+#      logic-delete-field: deleted    # \u903B\u8F91\u5220\u9664\u7684\u5C5E\u6027
+      logic-not-delete-value: 0 # \u672A\u5220\u9664  0     \u9ED8\u8BA4
+      logic-delete-value: 1  # \u5220\u9664 1           \u9ED8\u8BA4
+
+  #      table-prefix: t_     #\u8868\u540D\u524D\u9525  \u4E0D\u7528\u5728\u6BCF\u4E2A\u5B9E\u4F53\u7C7B\u914D\u7F6E@TableName
+  type-aliases-package: com.wggglggg.mybatisplus04wapper.model.po

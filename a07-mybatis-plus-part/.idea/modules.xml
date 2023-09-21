@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/a07-mybatis-plus-part.iml" filepath="$PROJECT_DIR$/a07-mybatis-plus-part.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-plus-02-curd-mapper/mybatis-plus-02-curd-mapper.iml" filepath="$PROJECT_DIR$/mybatis-plus-02-curd-mapper/mybatis-plus-02-curd-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-plus-03-curd-service/mybatis-plus-03-curd-service.iml" filepath="$PROJECT_DIR$/mybatis-plus-03-curd-service/mybatis-plus-03-curd-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-plus-04-wapper/mybatis-plus-04-wapper.iml" filepath="$PROJECT_DIR$/mybatis-plus-04-wapper/mybatis-plus-04-wapper.iml" />
+    </modules>
+  </component>
+</project>
